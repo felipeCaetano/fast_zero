@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a55565e4-2fb8-450d-86c5-d479ec06ec11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fast_zero.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.python-version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fast_zero/.python-version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fast_zero/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fast_zero/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_app.py" afterDir="false" />
-    </list>
+    <list default="true" id="a55565e4-2fb8-450d-86c5-d479ec06ec11" name="Changes" comment="repositório das aulas síncronas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +48,19 @@
       <option name="presentableId" value="Default" />
       <updated>1719554916974</updated>
     </task>
+    <task id="LOCAL-00001" summary="repositório das aulas síncronas">
+      <option name="closed" value="true" />
+      <created>1719639442866</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719639442866</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="repositório das aulas síncronas" />
+    <option name="LAST_COMMIT_MESSAGE" value="repositório das aulas síncronas" />
   </component>
 </project>
