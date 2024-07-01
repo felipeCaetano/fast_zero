@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 3 - 1:17:49">
+    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 3 - all tested">
+      <change afterPath="$PROJECT_DIR$/fast_zero/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_zero/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719737884934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="aula 3 - all tested">
+      <option name="closed" value="true" />
+      <created>1719806536956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719806536956</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aula 2" />
     <MESSAGE value="aula 3 - 1:17:49" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 3 - 1:17:49" />
+    <MESSAGE value="aula 3 - all tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 3 - all tested" />
   </component>
 </project>
