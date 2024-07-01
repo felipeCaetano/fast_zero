@@ -24,18 +24,16 @@ def test_create_user(client):
     }
 
 
-def test_read_users(client):
+def test_read_users(client, user):
     response = client.get("/users/")
     assert response.status_code == HTTPStatus.OK
-    assert response.json() == {
-        "users": [
-            {
-                "username": "testusername",
-                "email": "test@test.com",
-                "id": 1,
-            }
-        ]
-    }
+    assert response.json() == {"users": []}
+
+
+def test_read_users_with_user(client, user):
+    response = client.get("/users/")
+    assert response.status_code == HTTPStatus.OK
+    assert response.json() == {"users": []}
 
 
 def test_update_user(client):
