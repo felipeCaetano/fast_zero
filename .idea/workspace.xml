@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 4">
-      <change afterPath="$PROJECT_DIR$/fast_zero/database.py" afterDir="false" />
+    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 2">
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fast_zero.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fast_zero.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.python-version" beforeDir="false" afterPath="$PROJECT_DIR$/.python-version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fast_zero/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_zero/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_zero/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -44,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -67,31 +75,7 @@
       <option name="project" value="LOCAL" />
       <updated>1719720927089</updated>
     </task>
-    <task id="LOCAL-00002" summary="aula 3 - 1:17:49">
-      <option name="closed" value="true" />
-      <created>1719737884934</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1719737884934</updated>
-    </task>
-    <task id="LOCAL-00003" summary="aula 3 - all tested">
-      <option name="closed" value="true" />
-      <created>1719806536956</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1719806536956</updated>
-    </task>
-    <task id="LOCAL-00004" summary="aula 4">
-      <option name="closed" value="true" />
-      <created>1719813877812</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1719813877812</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,9 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aula 2" />
-    <MESSAGE value="aula 3 - 1:17:49" />
-    <MESSAGE value="aula 3 - all tested" />
-    <MESSAGE value="aula 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 4" />
+    <MESSAGE value="repositório das aulas síncronas" />
+    <option name="LAST_COMMIT_MESSAGE" value="repositório das aulas síncronas" />
   </component>
 </project>
