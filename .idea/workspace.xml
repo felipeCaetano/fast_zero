@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 4">
-      <change beforePath="$PROJECT_DIR$/.idea/fast_zero.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fast_zero.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 6">
+      <change afterPath="$PROJECT_DIR$/fast_zero/routers/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_zero/routers/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fast_zero/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_zero/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_security.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_security.py" afterDir="false" />
@@ -115,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719813877812</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="aula 6">
+      <option name="closed" value="true" />
+      <created>1720592134273</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720592134273</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +176,7 @@
     <MESSAGE value="aula 3 - 1:17:49" />
     <MESSAGE value="aula 3 - all tested" />
     <MESSAGE value="aula 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 4" />
+    <MESSAGE value="aula 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 6" />
   </component>
 </project>
