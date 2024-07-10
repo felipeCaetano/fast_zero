@@ -8,8 +8,12 @@ from sqlalchemy.orm import Session
 from fast_zero.database import get_session
 from fast_zero.models import User
 from fast_zero.schemas import Message, Token, UserList, UserPublic, UserSchema
-from fast_zero.security import get_password_hash, verify_password, \
-    create_access_token, get_current_user
+from fast_zero.security import (
+    create_access_token,
+    get_current_user,
+    get_password_hash,
+    verify_password,
+)
 
 app = FastAPI()
 
@@ -40,7 +44,7 @@ def create_user(user: UserSchema, session=Depends(get_session)):
     db_user = User(
         username=user.username,
         email=user.email,
-        password=get_password_hash(user.password)
+        password=get_password_hash(user.password),
     )
     session.add(db_user)
     session.commit()
@@ -56,11 +60,13 @@ def read_users(session: Session = Depends(get_session), limit=10, skip=0):
 
 @app.put("/users/{user_id}", response_model=UserPublic)
 def update_user(
-    user_id: int, user: UserSchema, session: Session = Depends(get_session),
-        current_user=Depends(get_current_user)
+    user_id: int,
+    user: UserSchema,
+    session: Session = Depends(get_session),
+    current_user=Depends(get_current_user),
 ):
     if current_user.id != user_id:
-        raise HTTPException(status_code=400, detail='Not enough permission')
+        raise HTTPException(status_code=400, detail="Not enough permission")
     current_user.email = user.email
     current_user.username = user.username
     current_user.password = get_password_hash(user.password)
@@ -72,25 +78,28 @@ def update_user(
 
 
 @app.delete("/users/{user_id}", response_model=Message)
-def delete(user_id: int, session: Session = Depends(get_session),
-           current_user=Depends(get_current_user)):
+def delete(
+    user_id: int,
+    session: Session = Depends(get_session),
+    current_user=Depends(get_current_user),
+):
     if current_user.id != user_id:
-        raise HTTPException(status_code=400, detail='Not enough permission')
+        raise HTTPException(status_code=400, detail="Not enough permission")
     session.delete(current_user)
     session.commit()
     return {"message": "User deleted."}
 
 
-@app.post('/token', response_model=Token)
+@app.post("/token", response_model=Token)
 def login_for_access_token(
-        form_data: OAuth2PasswordRequestForm = Depends(),
-        session: Session = Depends(get_session)
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    session: Session = Depends(get_session),
 ):
     user = session.scalar(select(User).where(User.email == form_data.username))
     if not user or not verify_password(form_data.password, user.password):
         raise HTTPException(
             status_code=HTTPStatus.NOT_FOUND,
-            detail="Incorrect email or password"
+            detail="Incorrect email or password",
         )
-    acess_token = create_access_token(data={'sub': user.email})
-    return {'acess_token': acess_token, 'token_type': 'Bearer'}
+    acess_token = create_access_token(data={"sub": user.email})
+    return {"acess_token": acess_token, "token_type": "Bearer"}

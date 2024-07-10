@@ -38,9 +38,7 @@ def session():
 def user(session):
     pwd = "testetest"
     user = User(
-        username="Test",
-        email="test@test.com",
-        password=get_password_hash(pwd)
+        username="Test", email="test@test.com", password=get_password_hash(pwd)
     )
     session.add(user)
     session.commit()
@@ -49,8 +47,10 @@ def user(session):
     return user
 
 
-@pytest.fixture
+@pytest.fixture()
 def token(client, user):
-    response = client.post('/token', data={'username': user.email,
-                                           'password': user.clean_password})
-    return response.json()['access_token']
+    response = client.post(
+        "/token",
+        data={"username": user.email, "password": user.clean_password},
+    )
+    return response.json()["access_token"]
