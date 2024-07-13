@@ -1,3 +1,4 @@
+import factory
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import StaticPool, create_engine
@@ -9,7 +10,16 @@ from fast_zero.models import User, table_registry
 from fast_zero.security import get_password_hash
 
 
-@pytest.fixture()
+class UserFactory(factory.Factory):
+    class Meta:
+        model = User
+
+    username = factory.Sequence(lambda n: f"test{n}")
+    email = factory.LazyAttribute(lambda obj: f"{obj.username}@test.com")
+    password = factory.LazyAttribute(lambda obj: f"{obj.username}senha")
+
+
+@pytest.fixture
 def client(session):
     def get_session_override():
         return session
@@ -21,7 +31,7 @@ def client(session):
     app.dependency_overrides.clear()
 
 
-@pytest.fixture()
+@pytest.fixture
 def session():
     engine = create_engine(
         "sqlite:///:memory:",
@@ -34,12 +44,10 @@ def session():
     table_registry.metadata.drop_all(engine)
 
 
-@pytest.fixture()
+@pytest.fixture
 def user(session):
-    pwd = "testetest"
-    user = User(
-        username="Test", email="test@test.com", password=get_password_hash(pwd)
-    )
+    pwd = "testtest"
+    user = UserFactory(password=get_password_hash(pwd))
     session.add(user)
     session.commit()
     session.refresh(user)
@@ -47,7 +55,16 @@ def user(session):
     return user
 
 
-@pytest.fixture()
+@pytest.fixture
+def other_user(session):
+    user = UserFactory()
+    session.add(user)
+    session.commit()
+    session.refresh(user)
+    return user
+
+
+@pytest.fixture
 def token(client, user):
     response = client.post(
         "/auth/token",

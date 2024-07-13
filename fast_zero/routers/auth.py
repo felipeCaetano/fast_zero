@@ -24,5 +24,5 @@ def login_for_access_token(session: T_Session, form_data: T_OAuth2Form):
             status_code=HTTPStatus.NOT_FOUND,
             detail="Incorrect email or password",
         )
-    acess_token = create_access_token(data={"sub": user.email})
-    return {"acess_token": acess_token, "token_type": "Bearer"}
+    access_token = create_access_token(data={"sub": user.email})
+    return {"access_token": access_token, "token_type": "Bearer"}

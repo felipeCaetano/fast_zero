@@ -16,8 +16,8 @@ def test_jwt():
 
 
 def test_jwt_invalid_token(client):
-    response = client.delete_user(
+    response = client.delete(
         "users/1", headers={"Autorization": "Bearer token-invalido"}
     )
     assert response.status_code == HTTPStatus.UNAUTHORIZED
-    assert response.json() == {"detail": "Could not validate credentials"}
+    assert response.json() == {"detail": "Not authenticated"}

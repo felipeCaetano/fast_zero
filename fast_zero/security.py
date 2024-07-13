@@ -4,7 +4,7 @@ from http import HTTPStatus
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from jwt import decode, encode
-from jwt.exceptions import PyJWTError
+from jwt.exceptions import ExpiredSignatureError, PyJWTError
 from pwdlib import PasswordHash
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -20,11 +20,11 @@ settings = Settings()
 
 
 def get_password_hash(password: str):
-    return pwd_context
+    return pwd_context.hash(password)
 
 
-def verify_password(password, hash_password):
-    return pwd_context.verify(password, hash_password)
+def verify_password(password, hashed_password):
+    return pwd_context.verify(password, hashed_password)
 
 
 def create_access_token(data: dict):
@@ -55,8 +55,12 @@ def get_current_user(
         username: str = payload.get("sub")
         if not username:
             raise credentials_execption
+    except ExpiredSignatureError:
+        raise credentials_execption
+
     except PyJWTError:
         raise credentials_execption
+
     user = session.scalar(select(User).where(User.email == username))
     if not user:
         raise credentials_execption
