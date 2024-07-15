@@ -46,7 +46,7 @@ def get_current_user(
     credentials_execption = HTTPException(
         status_code=HTTPStatus.UNAUTHORIZED,
         detail="Could not validate credentials",
-        headers={"WWW-Autenticate": "Bearer"},
+        headers={"WWW-Authenticate": "Bearer"},
     )
     try:
         payload = decode(

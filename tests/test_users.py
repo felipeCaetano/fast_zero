@@ -20,7 +20,7 @@ def test_create_user(client):
     }
 
 
-def test_read_users(client, token):
+def test_read_users(client, user, token):
     response = client.get(
         "/users/", headers={"Authorization": f"Bearer {token}"}
     )
@@ -28,9 +28,9 @@ def test_read_users(client, token):
     assert response.json() == {
         "users": [
             {
-                "username": "Test",
-                "email": "test@test.com",
-                "id": 1,
+                "username": user.username,
+                "email": user.email,
+                "id": user.id,
             }
         ]
     }
@@ -84,7 +84,7 @@ def test_delete_user(client, user, token):
 
 def test_delete_wrong_user(client, other_user, token):
     response = client.delete(
-        f"/users/{other_user.id}", headers={"Autorization": f"Bearer {token}"}
+        f"/users/{other_user.id}", headers={"Authorization": f"Bearer {token}"}
     )
     assert response.status_code == HTTPStatus.FORBIDDEN
     assert response.json() == {"detail": "Not enough permissions."}

@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 7 - refatorando a estrutura do projeto">
+    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 8 - 48:37">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/routers/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/routers/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fast_zero/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_security.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_security.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720598747380</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="aula 8 - 48:37">
+      <option name="closed" value="true" />
+      <created>1720860003344</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720860003345</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +189,7 @@
     <MESSAGE value="aula 4" />
     <MESSAGE value="aula 6" />
     <MESSAGE value="aula 7 - refatorando a estrutura do projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 7 - refatorando a estrutura do projeto" />
+    <MESSAGE value="aula 8 - 48:37" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 8 - 48:37" />
   </component>
 </project>
