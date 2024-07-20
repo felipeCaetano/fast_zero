@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 8 - 48:37">
+    <list default="true" id="ee10339f-cf83-4557-8e59-0e74c381979e" name="Changes" comment="aula 8 - all tests passed">
+      <change afterPath="$PROJECT_DIR$/fast_zero/routers/todo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_todo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_zero/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_zero/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fast_zero/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/routers/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fast_zero/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/routers/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fast_zero/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_zero/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/fast_zero/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +43,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in tests.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_todo.test_list_todos_should_return_5_todos.executor": "Run",
+    "Python tests.Python tests in tests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for test_todo.test_list_todos_should_return_5_todos">
+    <configuration name="Python tests for test_todo.test_list_todos_should_return_5_todos" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="fast_zero" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_todo.test_list_todos_should_return_5_todos&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="fast_zero" />
       <option name="ENV_FILES" value="" />
@@ -67,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_todo.test_list_todos_should_return_5_todos" />
         <item itemvalue="Python tests.Python tests in tests" />
       </list>
     </recent_temporary>
@@ -136,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720860003345</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="aula 8 - all tests passed">
+      <option name="closed" value="true" />
+      <created>1721055316286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721055316287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +218,7 @@
     <MESSAGE value="aula 6" />
     <MESSAGE value="aula 7 - refatorando a estrutura do projeto" />
     <MESSAGE value="aula 8 - 48:37" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 8 - 48:37" />
+    <MESSAGE value="aula 8 - all tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 8 - all tests passed" />
   </component>
 </project>
